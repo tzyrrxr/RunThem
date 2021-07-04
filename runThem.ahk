@@ -1,4 +1,6 @@
 ﻿#singleinstance, force
+; -- icon --
+Menu, Tray, Icon, folder.ico
 SetWorkingDir, %A_ScriptDir%
 SetTitleMatchMode, 2
 index := 0
@@ -16,5 +18,5 @@ par[index] :=  {title: title , path: path}
 */
 
 
-#include ..\function\function_quick.ahk
+#include function\function_quick.ahk
 gosub, function
